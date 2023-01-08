@@ -1,0 +1,97 @@
+ body{background-image: url("/projectC1/backgeound1.png"),url("/projectC1/backgeound1.png");
+  background-position:right,left;
+  background-size: 10%;
+  background-repeat:repeat-y;
+  background-attachment: scroll;
+  margin-left: 10%;
+  margin-right: 10%;
+  
+       }
+  .mode {
+      float:right;
+      
+  }
+  .change {
+      cursor: pointer;
+      border: 1px solid black;
+      border-radius: 40%;
+      width: 20px;
+      text-align: center;
+      padding: 5px;
+      margin-left: 8px;
+  }
+  .dark{
+      background-color:black;
+      color: #e6e6e6;
+      background-image: url("/projectC1/designtw1.jpg"),url("/projectC1/designtw1.jpg");
+      background-position:right,left;
+  background-size: 10%;
+  background-repeat: repeat-y;
+  background-attachment: scroll;
+  }
+  .bar{ 
+      display: flex;
+      align-items: center;
+      justify-content:space-between ;
+      padding-top: 20px;
+      padding-left: 10px;
+      padding-right: 8%;
+      
+  }
+ .bar ul li {
+      list-style-type: none;
+      display: inline-block;
+      padding: 10px 25px;
+      border-bottom-style:  dashed;
+      border-color: red;
+      border-width: 5PX ;
+      border-bottom-left-radius: 100%;
+      
+  }
+  .bar ul li a{
+      color: grey;
+      text-decoration: none;
+      font-weight:bold ;
+      text-transform: capitalize;
+     
+  }
+  a:hover{
+      color: red;
+  }
+  .ulbar{ position: absolute;
+      right: 35px;
+      top: 20px;
+  }
+  * {
+      margin: 0;
+      padding: 0;
+      font-family: "Mulish", sans-serif;
+    }  
+    .test{
+      position: relative;
+      overflow: hidden;
+      padding: 20px;
+      top: 100px;
+}
+    
+    .q1{
+      font-style: italic;
+      font-weight: bold;
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ } 
+ h1{
+  position: absolute;
+  top: 60px;
+  text-align: center;
+ }
+ h1:hover{
+  color: red;
+ }
+ input{
+  position: relative;
+  
+ }
+ .niveau{
+  border-color: red;
+  color: red;
+ }
