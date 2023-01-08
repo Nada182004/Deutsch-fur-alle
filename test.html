@@ -1,0 +1,83 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src=
+    "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+        </script><title>Document</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+      <!-- background properties -->
+      <div class="mode">
+        Dark mode:            
+        <span class="change">OFF</span>
+    </div>
+    <script>
+        $( ".change" ).on("click", function() {
+            if( $( "body" ).hasClass( "dark" )) {
+                $( "body" ).removeClass( "dark" );
+                $( ".change" ).text( "OFF" );
+            } else {
+                $( "body" ).addClass( "dark" );
+                $( ".change" ).text( "ON" );
+            }
+        });
+    </script>
+     <!-- la bar -->
+     <div class="bar">
+        <ul class="ulbar" >
+          
+            <li ><a href="/projectC1/hrim.html">Home</a> 
+            </li>
+            <li><a href="/projectC1/test.html">test</a> 
+            </li>
+            <li><a href="#">About us</a> 
+            </li>
+          </ul></div>
+          <!-- formulaire -->
+          <h1>LASS UNS DEIN NIVEAU <br> WISSEN</h1>
+          <form >
+          <div class="test">  <p class="q1"> Silke lebt nur mit ihrem Sohn als...</p>
+          <input type="checkbox" name="" value="Stiefmutter">Stiefmutter
+          <input type="checkbox" name="" value="Alleinerziehende">Alleinerziehende <br>
+          <input type="checkbox" name="" value="Gleichberechtigte">Gleichberechtigte
+          <input type="checkbox" name="" value="Geschiedene">Geschiedene</div>
+          <!-- formulaire -->
+          <div class="test">  <p class="q1"> Die Nachbarin behauptet, dass der Einbrecher durch das Fenster geflüchtet</p>
+          <input type="checkbox" name="" value="war">war
+          <input type="checkbox" name="" value="hat">hat
+          <br>
+          <input type="checkbox" name="" value="sei">sei
+          <input type="checkbox" name="" value="habe">habe</div>
+          <!-- formulaire -->
+          <div class="test">  <p class="q1"> Im Obst secken viele</p>
+          <input type="checkbox" name="" value="keime">keime
+          <input type="checkbox" name="" value="nadeln">nadeln
+          <br>
+          <input type="checkbox" name="" value="Nährstoffe">Nährstoffe
+          <input type="checkbox" name="" value="Erscheinungen">Erscheinungen</div>
+          <!-- formulaire -->
+          <div class="test">  <p class="q1">---älter man wird, ---mehr Erfahrung hat man</p>
+            <input type="checkbox" name="" value="Denn...je">Denn...je
+            <input type="checkbox" name="" value="Je...desto">Je...desto
+            <br>
+            <input type="checkbox" name="" value="Wenn...denn">Wenn...denn
+            <input type="checkbox" name="" value="Um...je">Um...je</div>
+            
+          </form>
+          <br><br><br><br><br>
+          <input type="button" value="meine Niveau" onclick="
+          var cmp1=0;
+          if(document.forms[0].elements[0].checked==true) { cmp1=25;} 
+          if(document.forms[0].elements[5].checked==true){ cmp1=cmp1+25;}
+          if(document.forms[0].elements[9].checked==true){ cmp1=cmp1+25;} 
+          if(document.forms[0].elements[14].checked==true){cmp1=cmp1+25;}    
+          document.getElementById('aaa').innerHTML=cmp1;
+            
+            ">
+            <p class="viveau" id="aaa"></p>
+
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="hrim.css">
+    <title>Dark Mode</title>
+     
+   
+    <script src=
+    "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+        </script>
+    <style>
+        /*backgroung colors  */
+        
+    </style>
+</head>
+ 
+<body>
+    <!-- background properties -->
+    <div class="mode">
+        Dark mode:            
+        <span class="change">OFF</span>
+    </div>
+    <script>
+        $( ".change" ).on("click", function() {
+            if( $( "body" ).hasClass( "dark" )) {
+                $( "body" ).removeClass( "dark" );
+                $( ".change" ).text( "OFF" );
+            } else {
+                $( "body" ).addClass( "dark" );
+                $( ".change" ).text( "ON" );
+            }
+        });
+    </script>
+    <!-- la bar-->
+    <div class="bar">
+    <ul class="ulbar" >
+      
+        <li ><a href="/projectC1/hrim.html">Startseite</a> 
+        </li>
+        <li><a href="/projectC1/test.html">Test</a> 
+        </li>
+        <li><a href="#">über uns</a> 
+        </li>
+      </ul></div> 
+      <!-- slide photo -->
+<section class="book">
+    <h2 class="book-category">Wortschatz</h2>
+        <!-- boutton droite gauche -->
+<button class="pre-btn"><img src="images/arrow.png" alt=""></button>
+<button class="nxt-btn"><img src="images/arrow.png" alt=""></button>
+<div class="book-container">
+<div class="book-card">
+<div class="book-image">
+                                
+<img src="schloss.jpg" class="book-thumb" alt="" id="img0" onclick="
+    document.getElementById('img0').src =  '/projectC1/schloss1.jpg';">
+                                
+</div>
+    <div class="book-info">
+    </div>
+    </div>
+<div class="book-card">
+<div class="book-image">
+<img src="wertewandel.jpeg" class="book-thumb" alt="" 
+ id="img1" onclick="document.getElementById('img1').src='/projectC1/wertewandel1.jpeg'">
+</div>
+<div class="book-info">
+</div>
+</div>
+<div class="book-card">
+<div class="book-image">
+<img src="durreperiode.jpeg" class="book-thumb" alt="" id="img2" onclick="document.getElementById('img2').src='/projectC1/durreperiode1.jpeg'">
+</div>
+<div class="book-info">
+</div>
+</div>
+<div class="book-card">
+<div class="book-image">
+<img src="Vereinbarkeit.jpg" class="book-thumb" alt="" id="img3" onclick="document.getElementById('img3').src='/projectC1/vereinbarkeitB.jpg'">
+</div>
+<div class="book-info">
+</div>
+</div>
+<div class="book-card">
+<div class="book-image">
+<img src="verschlusselung.jpeg" class="book-thumb" alt="" id="img4" onclick="document.getElementById('img4').src='/projectC1/verschlusselung1.jpeg'">
+</div>
+<div class="book-info">
+
+</div>
+</div>
+<div class="book-card">
+<div class="book-image">
+<img src="teambildung.jpeg" class="book-thumb" alt="" id="img5" onclick="document.getElementById('img5').src='teambildung1.jpeg'">
+</div>
+<script src="hrim.js"></script></div></div></section>
+<!-- lesson part -->
+<br><br>
+<section class="nd2">
+<script >
+    function toggleText() {
+        var text = document.getElementById("li1");
+        var text1 = document.getElementById("li2");
+        var text2 = document.getElementById("li3");
+        var text3 = document.getElementById("li4");
+            
+        if (text.style.display === "none") {
+          text.style.display = "block";
+        } else {
+          text.style.display = "none";
+        }
+        if (text1.style.display === "none") {
+          text1.style.display = "block";
+        } else {
+          text1.style.display = "none";
+        }
+        if (text2.style.display === "none") {
+          text2.style.display = "block";
+        } else {
+          text2.style.display = "none";
+        }
+        if (text3.style.display === "none") {
+          text3.style.display = "block";
+        } else {
+          text3.style.display = "none";
+        }
+      }</script>
+      <script >
+        function toggleText1() {
+            var text4 = document.getElementById("li4");
+            var text5 = document.getElementById("li5");
+            var text6 = document.getElementById("li6");
+            var text7 = document.getElementById("li7");
+                
+            if (text4.style.display === "none") {
+              text4.style.display = "block";
+            } else {
+              text4.style.display = "none";
+            }
+            if (text5.style.display === "none") {
+              text5.style.display = "block";
+            } else {
+              text5.style.display = "none";
+            }
+            if (text6.style.display === "none") {
+              text6.style.display = "block";
+            } else {
+              text6.style.display = "none";
+            }
+            if (text7.style.display === "none") {
+              text7.style.display = "block";
+            } else {
+              text7.style.display = "none";
+            }
+          }</script>
+      <table>
+        <tr><td>
+      <!-- GRAMMATIK -->
+      <div class="gram">
+    <h1 class="grammatik"  type='button' onclick="toggleText()">Grammatik</h1>
+    
+            <ul id="ul1" >
+            <li style='display: none' id="li1"> Subjektive Bedeutung der Modalverben</li>
+            <li style='display: none' id="li2">Wortbildung: Vorsilben miss-, zer-, ent- und de-pr</li>
+            <li style='display: none' id="li3">
+      Zweiteilige Konnektoren</li></ul></div>
+     </td>
+     <td>
+      <div class="gram">
+        <h1 class="grammatik" type='button' onclick="toggleText1()">Moduls</h1>
+        <ul id="moduls">
+            <li id="li4" style='display: none'>modul 1:</li>
+            <li id="li5" style='display: none'>modul 2:</li>
+            <li id="li6" style='display: none'>modul 3:</li>
+            <li id="li7" style='display: none'>modul 4:</li></div>
+        </td>
+    </tr>       
+    </table>
+<br><br><br><br><br><br><br><br></br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br></br><br><br><br><br><br><br><br><br><br>
+
+</section>
+    
+</body>
+ 
+</html>
